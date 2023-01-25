@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4566E97C2981A37F007BB839 /* SwiftConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E97B2981A37F007BB839 /* SwiftConcurrencyApp.swift */; };
-		4566E97E2981A37F007BB839 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E97D2981A37F007BB839 /* ContentView.swift */; };
+		4566E97E2981A37F007BB839 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E97D2981A37F007BB839 /* UsersListView.swift */; };
 		4566E9802981A380007BB839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566E97F2981A380007BB839 /* Assets.xcassets */; };
 		4566E9832981A380007BB839 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566E9822981A380007BB839 /* Preview Assets.xcassets */; };
 		4566E98D2981A380007BB839 /* SwiftConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E98C2981A380007BB839 /* SwiftConcurrencyTests.swift */; };
 		4566E9972981A380007BB839 /* SwiftConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9962981A380007BB839 /* SwiftConcurrencyUITests.swift */; };
 		4566E9992981A380007BB839 /* SwiftConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9982981A380007BB839 /* SwiftConcurrencyUITestsLaunchTests.swift */; };
+		4566E9A72981A3EA007BB839 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9A62981A3EA007BB839 /* User.swift */; };
+		4566E9A92981A448007BB839 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9A82981A448007BB839 /* Post.swift */; };
+		4566E9AC2981A4E1007BB839 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9AB2981A4E1007BB839 /* APIService.swift */; };
+		4566E9B02981A973007BB839 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9AF2981A973007BB839 /* UsersListViewModel.swift */; };
+		4566E9B32981ABB8007BB839 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4566E9B22981ABB8007BB839 /* posts.json */; };
+		4566E9B62981AC84007BB839 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9B52981AC84007BB839 /* Bundle+Extension.swift */; };
+		4566E9B82981ADC8007BB839 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9B72981ADC8007BB839 /* MockData.swift */; };
+		4566E9BA2981B163007BB839 /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9B92981B163007BB839 /* PostsListViewModel.swift */; };
+		4566E9BC2981DEF4007BB839 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9BB2981DEF4007BB839 /* PostsListView.swift */; };
+		4566E9BE2981E3B3007BB839 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 4566E9BD2981E3B3007BB839 /* users.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		4566E9782981A37F007BB839 /* SwiftConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566E97B2981A37F007BB839 /* SwiftConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyApp.swift; sourceTree = "<group>"; };
-		4566E97D2981A37F007BB839 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4566E97D2981A37F007BB839 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		4566E97F2981A380007BB839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4566E9822981A380007BB839 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4566E9882981A380007BB839 /* SwiftConcurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConcurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,16 @@
 		4566E9922981A380007BB839 /* SwiftConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConcurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566E9962981A380007BB839 /* SwiftConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITests.swift; sourceTree = "<group>"; };
 		4566E9982981A380007BB839 /* SwiftConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4566E9A62981A3EA007BB839 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4566E9A82981A448007BB839 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4566E9AB2981A4E1007BB839 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4566E9AF2981A973007BB839 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		4566E9B22981ABB8007BB839 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		4566E9B52981AC84007BB839 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		4566E9B72981ADC8007BB839 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4566E9B92981B163007BB839 /* PostsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		4566E9BB2981DEF4007BB839 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		4566E9BD2981E3B3007BB839 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +114,12 @@
 		4566E97A2981A37F007BB839 /* SwiftConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				4566E9B42981AC6E007BB839 /* Extensions */,
+				4566E9AE2981A95B007BB839 /* ViewModels */,
+				4566E9AD2981A94B007BB839 /* Views */,
+				4566E9AA2981A4CB007BB839 /* Services */,
+				4566E9A52981A3DD007BB839 /* Models */,
 				4566E97B2981A37F007BB839 /* SwiftConcurrencyApp.swift */,
-				4566E97D2981A37F007BB839 /* ContentView.swift */,
 				4566E97F2981A380007BB839 /* Assets.xcassets */,
 				4566E9812981A380007BB839 /* Preview Content */,
 			);
@@ -106,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				4566E9822981A380007BB839 /* Preview Assets.xcassets */,
+				4566E9B22981ABB8007BB839 /* posts.json */,
+				4566E9B72981ADC8007BB839 /* MockData.swift */,
+				4566E9BD2981E3B3007BB839 /* users.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +152,49 @@
 				4566E9982981A380007BB839 /* SwiftConcurrencyUITestsLaunchTests.swift */,
 			);
 			path = SwiftConcurrencyUITests;
+			sourceTree = "<group>";
+		};
+		4566E9A52981A3DD007BB839 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4566E9A62981A3EA007BB839 /* User.swift */,
+				4566E9A82981A448007BB839 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4566E9AA2981A4CB007BB839 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4566E9AB2981A4E1007BB839 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4566E9AD2981A94B007BB839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4566E97D2981A37F007BB839 /* UsersListView.swift */,
+				4566E9BB2981DEF4007BB839 /* PostsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4566E9AE2981A95B007BB839 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4566E9AF2981A973007BB839 /* UsersListViewModel.swift */,
+				4566E9B92981B163007BB839 /* PostsListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4566E9B42981AC6E007BB839 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4566E9B52981AC84007BB839 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4566E9BE2981E3B3007BB839 /* users.json in Resources */,
 				4566E9832981A380007BB839 /* Preview Assets.xcassets in Resources */,
+				4566E9B32981ABB8007BB839 /* posts.json in Resources */,
 				4566E9802981A380007BB839 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4566E97E2981A37F007BB839 /* ContentView.swift in Sources */,
+				4566E97E2981A37F007BB839 /* UsersListView.swift in Sources */,
+				4566E9B62981AC84007BB839 /* Bundle+Extension.swift in Sources */,
+				4566E9B02981A973007BB839 /* UsersListViewModel.swift in Sources */,
+				4566E9BA2981B163007BB839 /* PostsListViewModel.swift in Sources */,
+				4566E9AC2981A4E1007BB839 /* APIService.swift in Sources */,
 				4566E97C2981A37F007BB839 /* SwiftConcurrencyApp.swift in Sources */,
+				4566E9B82981ADC8007BB839 /* MockData.swift in Sources */,
+				4566E9A72981A3EA007BB839 /* User.swift in Sources */,
+				4566E9BC2981DEF4007BB839 /* PostsListView.swift in Sources */,
+				4566E9A92981A448007BB839 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
