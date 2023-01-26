@@ -15,7 +15,25 @@ class PostsListViewModel: ObservableObject {
 
     var userId: Int?
     
-    func fetchUserPosts() {
+    @MainActor
+    func fetchUserPosts() async {
+        guard let userId = userId else {
+            return
+        }
+        let apiService = APIService(urlString: "https://jsonplaceholder.typicode.com/users/\(userId)/posts")
+        isLoading.toggle()
+        defer {
+            isLoading.toggle()
+        }
+        do {
+            posts = try await apiService.getJSON()
+        } catch {
+            showAlert = true
+            errorMessage = error.localizedDescription + "\nPlease contant the developer and provide this error and the steps to reproduce"
+        }
+    }
+    
+    func fetchUserPostsWithCompletion() {
         if let userId = userId {
             isLoading.toggle()
             let apiService = APIService(urlString: "https://jsonplaceholder.typicode.com/users/\(userId)/posts")
