@@ -24,6 +24,7 @@
 		4566E9BA2981B163007BB839 /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9B92981B163007BB839 /* PostsListViewModel.swift */; };
 		4566E9BC2981DEF4007BB839 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9BB2981DEF4007BB839 /* PostsListView.swift */; };
 		4566E9BE2981E3B3007BB839 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 4566E9BD2981E3B3007BB839 /* users.json */; };
+		4566E9C029823D80007BB839 /* UserAndPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566E9BF29823D80007BB839 /* UserAndPosts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		4566E9B92981B163007BB839 /* PostsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
 		4566E9BB2981DEF4007BB839 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
 		4566E9BD2981E3B3007BB839 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		4566E9BF29823D80007BB839 /* UserAndPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAndPosts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				4566E9A62981A3EA007BB839 /* User.swift */,
 				4566E9A82981A448007BB839 /* Post.swift */,
+				4566E9BF29823D80007BB839 /* UserAndPosts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4566E9C029823D80007BB839 /* UserAndPosts.swift in Sources */,
 				4566E97E2981A37F007BB839 /* UsersListView.swift in Sources */,
 				4566E9B62981AC84007BB839 /* Bundle+Extension.swift in Sources */,
 				4566E9B02981A973007BB839 /* UsersListViewModel.swift in Sources */,
